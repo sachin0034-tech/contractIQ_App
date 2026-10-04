@@ -68,7 +68,11 @@
   overflow: hidden;
 }
 
-.lp .wrap { padding-inline: clamp(16px, 5vw, 48px); }
+.lp .wrap {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(24px, 5vw, 64px);
+}
 
 /* ── Topbar ────────────────────────────────────────────────────────────────── */
 .lp .topbar {
@@ -139,12 +143,13 @@
 /* ── Hero ──────────────────────────────────────────────────────────────────── */
 .lp .hero {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
   align-items: center;
   padding-block: 72px 64px;
   position: relative;
   min-height: 440px;
+  overflow: hidden;
 }
 .lp .hero::before {
   content: "";
@@ -172,7 +177,7 @@
 .lp .cta { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* ── Hero art ──────────────────────────────────────────────────────────────── */
-.lp .hero-art { position: relative; height: 340px; min-width: 0; }
+.lp .hero-art { position: relative; height: 340px; min-width: 0; overflow: hidden; }
 .lp .hero-art svg.shape {
   position: absolute;
   left: 50%;
