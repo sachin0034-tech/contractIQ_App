@@ -4,7 +4,7 @@ import { processContract } from '@/services/extraction.service';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-export const maxDuration = 60;
+export const maxDuration = 120;
 
 /** Runs extraction for a contract. Idempotent: a completed contract returns its stored terms. */
 export const POST = route(async ({ supabase, user, params }) => {
