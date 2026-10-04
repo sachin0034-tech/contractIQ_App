@@ -24,23 +24,6 @@
   --lp-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0a0a0c;
-    --sheet: #111114;
-    --fg: #f2f2f4;
-    --muted: #9a9ca6;
-    --line: #26272c;
-    --accent: #5aa2ee;
-    --accent-soft: #16253a;
-    --ink: #f2f2f4;
-    --on-ink: #0c0c0e;
-    --risk: #ff6a73;
-    --chip: #1c1d22;
-    --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    color-scheme: dark;
-  }
-}
 
 :root[data-theme="dark"] {
   --bg: #0a0a0c;
