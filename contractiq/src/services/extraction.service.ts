@@ -30,7 +30,7 @@ import { STALE_PROCESSING_MS } from './contract.service';
  * Upper bound for the full prompt (system rules, few-shot examples, a 15,000 token contract, terms).
  * Slightly above the 20,000 in the spec because the few-shot examples alone use about 3,000 tokens.
  */
-const MAX_PROMPT_TOKENS = 22_000;
+const MAX_PROMPT_TOKENS = 37_000;
 
 export interface ProcessResult {
   status: 'completed';

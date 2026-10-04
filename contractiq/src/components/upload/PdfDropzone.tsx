@@ -40,7 +40,7 @@ export function PdfDropzone({ contractType, onUploaded }: PdfDropzoneProps) {
         return;
       }
       if (file.size > MAX_PDF_BYTES) {
-        setState({ kind: 'error', message: 'PDF must be 10 MB or smaller.' });
+        setState({ kind: 'error', message: 'PDF must be 20 MB or smaller.' });
         return;
       }
 
@@ -115,7 +115,7 @@ export function PdfDropzone({ contractType, onUploaded }: PdfDropzoneProps) {
           <>
             <UploadCloud className="h-8 w-8 text-text-secondary" aria-hidden="true" />
             <p className="type-body-lg">Drag and drop your PDF here</p>
-            <p className="type-body-sm text-text-secondary">Text-layer PDF, up to 20 pages and 10 MB</p>
+            <p className="type-body-sm text-text-secondary">Text-layer PDF, up to 30 pages and 20 MB</p>
             <input
               id={inputId}
               type="file"

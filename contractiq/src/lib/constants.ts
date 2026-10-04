@@ -1,6 +1,6 @@
-export const MAX_PDF_BYTES = 10 * 1024 * 1024;
-export const MAX_PDF_PAGES = 20;
-export const MAX_CONTRACT_TOKENS = 15_000;
+export const MAX_PDF_BYTES = 20 * 1024 * 1024;
+export const MAX_PDF_PAGES = 30;
+export const MAX_CONTRACT_TOKENS = 30_000;
 export const MIN_CONTRACT_WORDS = 100;
 export const MAX_CUSTOM_TERMS = 5;
 export const MAX_CHAT_HISTORY_MESSAGES = 200;
