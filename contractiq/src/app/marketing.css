@@ -43,11 +43,10 @@
 
 /* ── Base ──────────────────────────────────────────────────────────────────── */
 .lp {
-  background: var(--bg);
+  background: var(--sheet);
   color: var(--fg);
   font: 400 15px/1.55 var(--lp-sans);
-  padding-inline: 16px;
-  padding-block: 0 24px;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -64,11 +63,9 @@
 
 /* ── Sheet / Wrap ──────────────────────────────────────────────────────────── */
 .lp .sheet {
-  max-width: 1120px;
-  margin: 0 auto;
+  width: 100%;
   background: var(--sheet);
   overflow: hidden;
-  border-inline: 1px solid var(--line);
 }
 
 .lp .wrap { padding-inline: clamp(16px, 5vw, 48px); }
